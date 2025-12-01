@@ -12,8 +12,8 @@ The system supports three roles as stated in specs:
 
 Course specs:
 - Relational DB in PostgreSQL with DDL.sql + DML.sql
-- At least 4 Member fns, 2 Trainer fns, and 2 Admin fns (for a 2-person group total ≥10 operations). :contentReference[oaicite:2]{index=2}  
-- Separate ERD + mapping + normalization documented under `/docs`. :contentReference[oaicite:3]{index=3}  
+- At least 4 Member fns, 2 Trainer fns, and 2 Admin fns (for a 2-person group total ≥10 operations).
+- Separate ERD + mapping + normalization documented under `/docs`
 
 ---
 ## 1. Tech info
