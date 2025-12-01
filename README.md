@@ -2,32 +2,31 @@
 ## Health & Fitness Club Management System
 ## Group of 2: Alex Bon and Gloria Li
 
-This project is a **CLI-based Health & Fitness Club Management System** built for COMP 3005 (Fall 2025).  
-It uses **PostgreSQL** as the backend DB and **Python (psycopg2)** as the application for UI
+This project is a CLI-based Health & Fitness Club Management System built for COMP 3005 (Fall 2025).  
+It uses PostgreSQL as the backend DB and Python (psycopg2) as the application for UI
 
-The system supports **three roles** as stated in specs:
-- **Member**: register, manage profile, track health metrics & goals, and view personal dashboard
-- **Trainer**: set availability and look up member progress
-- **Admin**: (planned) room/class/billing operations for staff.
+The system supports three roles as stated in specs:
+- Member: register, manage profile, track health metrics & goals, and view personal dashboard
+- Trainer: set availability and look up member progress
+- Admin: (planned) room/class/billing operations for staff.
 
 Course specs:
-- Relational DB in PostgreSQL with **DDL.sql + DML.sql**. :contentReference[oaicite:1]{index=1}  
-- At least **4 Member fns**, **2 Trainer fns**, and **2 Admin fns** (for a 2-person group total ≥10 operations). :contentReference[oaicite:2]{index=2}  
-- Separate **ERD + mapping + normalization** documented under `/docs`. :contentReference[oaicite:3]{index=3}  
+- Relational DB in PostgreSQL with DDL.sql + DML.sql
+- At least 4 Member fns, 2 Trainer fns, and 2 Admin fns (for a 2-person group total ≥10 operations). :contentReference[oaicite:2]{index=2}  
+- Separate ERD + mapping + normalization documented under `/docs`. :contentReference[oaicite:3]{index=3}  
 
 ---
 ## 1. Tech info
 
-- **Language:** Python
-- **Database:** PostgreSQL
-- **Library:** `psycopg2` for DB connection
-- **Interface:** Text-based CLI (menu-driven)
+- Language: Python
+- Database: PostgreSQL
+- Library: `psycopg2` for DB connection
+- Interface: Text-based CLI (menu-driven)
 
 ---
 ## 2. Folder Structure
 
-Project root (what we submit):
-
+Project root:
 ```text
 Final Project
 ├── README.md # this file
