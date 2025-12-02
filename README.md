@@ -7,9 +7,9 @@ We built a CLI-based Health & Fitness Club Management System that uses PostgreSQ
 
 The system supports the three main roles required in the specs:
 
-- Member: register/login, update profile, track personal health metrics, view goals, and check dashboard summaries
+- Member: register/login, update profile, track metrics, view goals, and dashboard summaries
 - Trainer: set availability and look up member progress
-- Admin: room/class scheduling operations (we implemented the required minimum)
+- Admin: room/class scheduling feature
 
 ## Course requirements included:
 
@@ -19,34 +19,36 @@ A separate write-up with ERD, Relational Mapping, and Normalization (2NF/3NF) st
 
 1. Tech Stack
 
-Python
-
-PostgreSQL
-
-psycopg2 (DB connection)
+-Python
+-PostgreSQL
+-psycopg2 (DB connection)
 
 Text-based CLI (menu-driven)
 
 2. Project Structure
 Final Project
-| README.md # Project overview + how to run
-| sql
-| |-- DDL.sql # All CREATE TABLE statements + constraints
-| |-- DML.sql # Sample data (members, trainers, rooms…)
-| app
-| |-- app.py # Main CLI entry point + menus
-| |-- auth.py # Login logic + registration (member)
-| |-- member.py # Member functions (metrics, goals, profile mgmt)
-| |-- trainer.py # Trainer functions (availability, member lookup)
-| |-- admin.py # Admin functions (rooms, bookings, classes)
-| |-- db.py # DB connection + resetDB() to load schema/data
-| |-- state.py # Simple session tracking (current user + role)
-| |-- __pycache__/ # Python cache files
-| docs
-| |-- ERD.pdf # ER diagram (entities + relationships)
-| |-- Normalization.pdf # 2NF/3NF proof and summary table
-| |-- Mapping.pdf # ER → Relational schema mapping (optional)
-| |-- Report.pdf # Short written report + assumptions
+│  README.md                  # Project overview + how to run
+│
+├── sql
+│   ├── DDL.sql               # Create tables + constraints
+│   └── DML.sql               # data (members, trainers...)
+│
+├── app
+│   ├── app.py                # Main CLI entry point
+│   ├── auth.py               # Login + registration
+│   ├── member.py             # Member operations (metrics, goals, profile)
+│   ├── trainer.py            # Trainer ops (availability, lookup)
+│   ├── admin.py              # Admin ops (rooms, classes)
+│   ├── db.py                 # DB connection + resetDB()
+│   ├── state.py              # sesh tracking
+│   └── __pycache__/          # python cache files
+│
+└── docs
+    ├── ERD.pdf               # entities + relationships
+    ├── Normalization.pdf     # 2NF/3NF proof (table + conclusion)
+    ├── Mapping.pdf           # ER -> relational schema mapping
+    └── Report.pdf            # short summary + assumptions
+
 
 3. how 2 run the project
 
