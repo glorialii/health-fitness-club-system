@@ -27,27 +27,24 @@ Text-based CLI (menu-driven)
 
 2. Project Structure
 Final Project
-│  README.md                  # Project overview + how to run
-│
+│  README.md    # Project overview + how to run
 ├── sql
-│   ├── DDL.sql               # Create tables + constraints
-│   └── DML.sql               # data (members, trainers...)
-│
+│   ├── DDL.sql # Create tables + constraints
+│   └── DML.sql # data (members, trainers...)
 ├── app
-│   ├── app.py                # Main CLI entry point
-│   ├── auth.py               # Login + registration
-│   ├── member.py             # Member operations (metrics, goals, profile)
-│   ├── trainer.py            # Trainer ops (availability, lookup)
-│   ├── admin.py              # Admin ops (rooms, classes)
-│   ├── db.py                 # DB connection + resetDB()
-│   ├── state.py              # sesh tracking
-│   └── __pycache__/          # python cache files
-│
+│   ├── app.py  # Main CLI entry point
+│   ├── auth.py # Login + registration
+│   ├── member.py   # Member operations (metrics, goals, profile)
+│   ├── trainer.py  # Trainer ops (availability, lookup)
+│   ├── admin.py    # Admin ops (rooms, classes)
+│   ├── db.py   # DB connection + resetDB()
+│   ├── state.py    # sesh tracking
+│   └── __pycache__ # python cache files
 └── docs
-    ├── ERD.pdf               # entities + relationships
-    ├── Normalization.pdf     # 2NF/3NF proof (table + conclusion)
-    ├── Mapping.pdf           # ER -> relational schema mapping
-    └── Report.pdf            # short summary + assumptions
+    ├── ERD.pdf # entities + relationships
+    ├── Normalization.pdf   # 2NF/3NF proof (table + conclusion)
+    ├── Mapping.pdf # ER -> relational schema mapping
+    └── Report.pdf  # short summary + assumptions
 
 
 3. how 2 run the project
