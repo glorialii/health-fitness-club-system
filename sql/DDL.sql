@@ -1,3 +1,4 @@
+-- DDL.sql
 -- Member Section
 
 DROP TABLE IF EXISTS members CASCADE;
@@ -149,3 +150,5 @@ CREATE TABLE class_regs (
 	class_id	INT NOT NULL REFERENCES classes(class_id),
 	member_id	INT NOT NULL REFERENCES members(member_id)
 );
+
+CREATE INDEX idx_metric_date ON metrics(metric_date)
